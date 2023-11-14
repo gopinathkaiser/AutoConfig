@@ -14,6 +14,7 @@ public class AutoConfigurationApplication implements CommandLineRunner {
 
 	@Autowired
 	WebApplicationContext context;
+
 	public static void main(String[] args) {
 		SpringApplication.run(AutoConfigurationApplication.class, args);
 	}
@@ -23,7 +24,5 @@ public class AutoConfigurationApplication implements CommandLineRunner {
 		Students students = context.getBean(Students.class);
 		students.getStudents();;
 	}
-
-
 
 }
